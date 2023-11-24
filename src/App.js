@@ -1,5 +1,5 @@
 import "./App.css";
-import Header from "./pages/landingPage/header.jsx";
+import Header from "./pages/landingPage/header";
 
 function App() {
   return (
