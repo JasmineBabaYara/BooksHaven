@@ -1,6 +1,19 @@
 .App {
   width: 100%;
-  padding: 0 30px 0 30px;
-  text-align: center;
+  padding: 0 40px 40px 40px;
+  background-color: #F2F8FC;
 }
 
+.header, .filterItem, .searchInput::placeholder {
+  color: #6C63FF;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: #F2F8FC;
+}
+
+button, .search {
+  border-color: #6C63FF;
+}
