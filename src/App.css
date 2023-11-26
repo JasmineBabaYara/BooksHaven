@@ -1,11 +1,18 @@
 .App {
   width: 100%;
-  padding: 0 40px 40px 40px;
+  padding: 0 80px 40px 80px;
   background-color: #F2F8FC;
 }
 
-.header, .filterItem, .searchInput::placeholder {
+.header, .filterItem, .searchInput::placeholder, .title, .year, .country {
   color: #6C63FF;
+}
+
+.contentHeader {
+  font-family: Playfair Display;
+  color: #6C63FF;
+  font-size: 50px;
+  font-weight: bold;
 }
 
 input {
@@ -14,6 +21,23 @@ input {
   background-color: #F2F8FC;
 }
 
-button, .search {
+button, .search, .year, .country {
   border-color: #6C63FF;
+}
+
+.year, .country {
+  background-color: #D8DAFD;
+}
+
+.bookImage {
+  width: 309px;
+  height: 449px;
+}
+
+.bookCard:hover {
+  z-index: 1;
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  box-shadow: 0 8px 50px #D8DAFD;
 }
