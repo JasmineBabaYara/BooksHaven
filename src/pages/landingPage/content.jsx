@@ -5,6 +5,7 @@ export default function content() {
   return (
     <div className="flex flex-row justify-between items-center w-full">
       <div className="w-1/2 text-left">
+        <p>Books Haven, Home of the Best Books</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           tempor ut leo eu dictum. Aliquam faucibus augue erat, quis vulputate
