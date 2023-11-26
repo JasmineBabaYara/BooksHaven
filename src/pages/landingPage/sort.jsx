@@ -2,7 +2,7 @@ import React from "react";
 import { IoSearch } from "react-icons/io5";
 export default function sort() {
   return (
-    <div className="mt-20 flex justify-between items-center w-full">
+    <div className="mt-40 flex justify-between items-center w-full">
       <div className="flex flex-wrap items-center gap-4">
         <p className="header text-lg font-bold">Filter By:</p>
         <FilterCard
