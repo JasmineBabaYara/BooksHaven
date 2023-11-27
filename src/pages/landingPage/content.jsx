@@ -17,7 +17,7 @@ export default function content() {
           congue, at egestas erat congue.
         </p>
       </div>
-      <div className="laptop:w-5/12 w-full tablet:flex laptop:mt-0 mt-10 tablet:flex-row flex-col laptop:gap-10 mob:hidden items-center justify-between">
+      <div className="laptop:w-5/12 w-full tablet:flex laptop:mt-0 mt-10 tablet:flex-row flex-col laptop:gap-10 hidden items-center justify-between">
         <div className="">
           <img src={book4} alt="book1" className="h-72 w-52 rounded-lg" />
         </div>
