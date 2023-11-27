@@ -9,10 +9,8 @@
 }
 
 .contentHeader {
-  font-family: Playfair Display;
+  font-family: 'DECORATIVE';
   color: #6C63FF;
-  font-size: 50px;
-  font-weight: bold;
 }
 
 input {
@@ -40,4 +38,13 @@ button, .search, .year, .country {
   transition: 0.2s ease-in;
   cursor: pointer;
   box-shadow: 0 8px 50px #D8DAFD;
+}
+
+.footerBooksTxt {
+  font-family: 'Cinzel Decorative';
+  color: #6C63FF;
+}
+
+.footerHavenTxt {
+  font-family: 'Cinzel Decorative';
 }
