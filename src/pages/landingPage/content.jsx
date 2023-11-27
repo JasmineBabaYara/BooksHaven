@@ -1,29 +1,32 @@
 import React from "react";
-import questionSvg from "../../images/img/questionImg.svg";
+import book2 from "../../images/img/books/book2.jpg";
+import book3 from "../../images/img/books/book3.webp";
+import book4 from "../../images/img/books/book4.webp";
 
 export default function content() {
   return (
-    <div className="flex flex-row justify-between items-center w-full">
-      <div className="w-1/2 text-left">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-          tempor ut leo eu dictum. Aliquam faucibus augue erat, quis vulputate
-          erat egestas in. Duis mollis tincidunt mi, sed interdum orci tristique
-          id. Proin id velit vitae neque pulvinar vulputate at quis quam.
-          Vivamus nec eros quis nisi scelerisque porta. In semper nisl vel
-          iaculis sodales. Duis sit amet libero efficitur justo semper tincidunt
-          sit amet a mauris. Vestibulum lorem erat, interdum non rhoncus nec,
-          porttitor quis elit. Integer dignissim arcu nec elit ultricies, vel
-          semper massa eleifend. Sed non arcu at purus sodales ultricies.
-          Aliquam fermentum nunc a enim congue, at egestas erat congue. Sed
-          vestibulum malesuada ex, et rutrum lacus vehicula in. Praesent iaculis
-          lectus nisi, eget fermentum arcu molestie a. Duis non auctor leo, quis
-          mattis eros. Suspendisse euismod arcu a orci blandit consectetur. In
-          ullamcorper blandit lorem at aliquam.
+    <div className="flex flex-row justify-between items-center w-full mt-4">
+      <div className="w-5/12 text-left">
+        <p className="contentHeader">Books Haven, Home of the Best Books</p>
+        <p className="mt-4 ">
+          Vestibulum lorem erat, interdum non rhoncus nec, porttitor quis elit.
+          Integer dignissim arcu nec elit ultricies, vel semper massa eleifend.
+          Sed non arcu at purus sodales ultricies. Aliquam fermentum nunc a enim
+          congue, at egestas erat congue.
         </p>
       </div>
-      <div className="h-1/2 w-1/2">
-        <img src={questionSvg} alt="svg" className="h-full w-full " />
+      <div className="w-5/12 flex gap-10 items-center">
+        <div className="">
+          <img src={book4} alt="book1" className="h-72 w-52 rounded-lg"/>
+        </div>
+        <div>
+        <div className="">
+          <img src={book3} alt="book3" className="h-72 w-52 rounded-lg"/>
+        </div>
+        <div className="mt-4">
+          <img src={book2} alt="book2" className="h-72 w-52 rounded-lg"/>
+        </div>
+        </div>
       </div>
     </div>
   );
