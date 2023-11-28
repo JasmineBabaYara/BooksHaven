@@ -4,7 +4,7 @@ import data from "../../utils/data";
 export default function booksDisplay() {
   return (
     <div className="mt-14 w-full">
-      <div className="flex flex-wrap justify-between gap-20">
+      <div className="flex flex-wrap laptop:justify-between justify-center laptop:gap-20 gap-14">
         {data.map((item) => {
           return (
             <div key={item.id} className="bookCard rounded-lg">
