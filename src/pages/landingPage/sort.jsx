@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 // import { IoSearch } from "react-icons/io5";
 import data from "../../utils/data";
+import book3 from "../../images/img/books/book3.webp";
+import review from "../../images/img/review.png";
 
 export default function Sort() {
   const [search, setSearch] = useState("");
   // console.log(search); //print input
+
+  const [modal, setModal] = useState(false);
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <div>
       <div className="laptop:mt-40 tablet:mt-20 mt-10 flex laptop:flex-row flex-col justify-between laptop:items-center w-full">
@@ -50,7 +58,11 @@ export default function Sort() {
             })
             .map((item) => {
               return (
-                <div key={item.id} className="bookCard rounded-lg">
+                <div
+                  key={item.id}
+                  className="bookCard rounded-lg"
+                  onClick={toggleModal}
+                >
                   <img
                     src={item.photo}
                     alt="book"
@@ -76,6 +88,52 @@ export default function Sort() {
               );
             })}
         </div>
+        {modal && (
+          <div className="modal">
+            <div className="overlay" onClick={toggleModal}>
+              <div className="modal-content bg-white w-1/2 h-auto p-4 pr-20 pl-20 rounded-lg">
+                <div className="flex mt-5 ">
+                  <img src={book3} alt="book" className="w-20 rounded-lg" />
+                  <div className="ml-5">
+                    <p className="title font-bold text-2xl">
+                      Don’t Answer When They Call Your Name
+                    </p>
+                    <p className="text-sm mt-3">Ukamaka Olisakwe</p>
+                    <div className="flex gap-4 mt-3">
+                      <div className="genre flex items-center justify-center w-auto pl-3 pr-3 p-1 border rounded-2xl">
+                        <p className="text-xs font-semibold">Thriller</p>
+                      </div>
+                      <div className="genre flex items-center justify-center w-auto pl-3 pr-3 p-1 border rounded-2xl">
+                        <p className="text-xs font-semibold">Horror</p>
+                      </div>
+                      <div className="genre flex items-center justify-center w-auto pl-3 pr-3 p-1 border rounded-2xl">
+                        <p className="text-xs font-semibold">Biography</p>
+                      </div>
+                    </div>
+                    <img
+                    src={review}
+                    alt="review"
+                    className="mt-3 w-32 "
+                  />
+                  </div>
+                </div>
+                <p className="mt-6 text-sm pb-10">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent tempor ut leo eu dictum. Aliquam faucibus augue
+                    erat, quis vulputate erat egestas in. Duis mollis tincidunt
+                    mi, sed interdum orci tristique id. Proin id velit vitae
+                    neque pulvinar vulputate at quis quam. 
+                    <br /> <br />Vivamus nec eros quis
+                    nisi scelerisque porta. In semper nisl vel iaculis sodales.
+                    Duis sit amet libero efficitur justo semper tincidunt sit
+                    amet a mauris. Vivamus nec eros quis nisi scelerisque porta.
+                    In semper nisl vel iaculis sodales. Duis sit amet libero
+                    efficitur justo semper tincidunt sit amet a mauris.
+                  </p>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
