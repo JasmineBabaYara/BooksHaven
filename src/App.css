@@ -49,6 +49,32 @@ button, .search, .year, .country {
   font-family: 'Cinzel Decorative';
 }
 
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, .8);
+}
+
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.genre {
+  color: #6C63FF;
+  border-color: #6C63FF;
+}
+
 @media (min-width: 768px) { 
   .App {
     padding: 0 80px 40px 80px;
