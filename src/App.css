@@ -57,6 +57,7 @@ button, .search, .year, .country {
   left: 0;
   right: 0;
   position: fixed;
+  z-index: 1;
 }
 
 .overlay {
